@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="icon/gasmask.ico">
+  <link rel="stylesheet" href="portstyle.css">
+  <title>Meu Portfólio</title> 
+</head>
+
+<body>
+  <marquee behavior="scroll" direction="left">🚧 Bem Vindo ao meu Portifolio 🚧</marquee>
+
+
+  <button class="btn-iniciar" id="btnIniciar">
+    <span class="icone">🪟</span> Iniciar
+  </button>
+
+  <div class="menu-iniciar" id="menuIniciar" role="menu" aria-hidden="true">
+    <div class="menu-iniciar-header">Menu Iniciar</div>
+    <ul>
+      <li tabindex="0" role="menuitem">Meu Computador</li>
+      <li tabindex="0" role="menuitem">Documentos</li>
+      <li tabindex="0" role="menuitem">Configurações</li>
+      <li tabindex="0" role="menuitem">Ajuda</li>
+      <li tabindex="0" role="menuitem">Desligar...</li>
+    </ul>
+  </div>
+  <img src="img/banner3.gif" alt="Under Construction" class="gif_banner">
+  <header>
+    <h1>Bruno Souza</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <button class="abrir-janela" onclick="abrirJanela()">Abrir Janela</button>
+
+  <div class="win95-window" id="janela1">
+    <div class="win95-titlebar" id="titulo-janela1">
+      <span class="win95-title">Sobre Bruno</span>
+      <button class="win95-close" onclick="fecharJanela()">X</button>
+    </div>
+    <div class="win95-content">
+      <p>Bem-vindo à minha janela retrô. <a href="#">Clique aqui</a> para testar o som de clique.</p>
+      <div class="audio-player">
+        <audio id="musica-janela">
+          <source src="sounds/STsong.m4a" type="audio/mpeg">
+          Seu navegador não suporta áudio.
+        </audio>
+
+        <div class="controls">
+          <button id="playPause" class="win95-btn">▶</button>
+          <input type="range" id="seekBar" value="0" max="100">
+          <span id="timeLabel">0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <div>
+      <img src="img/rato molhado.jpg" alt="Foto de Perfil" class="foto-perfil">
+    </div>
+    <p>
+      Sou uma pessoa dedicada e focada, com forte competência em trabalho e liderança. Tenho facilidade para organizar
+      equipes e conduzir projetos com eficiência, sempre buscando resultados positivos e superando desafios com
+      determinação.
+    </p>
+  </section>
+  <img src="img/robnnr.gif" alt="Under Construction" class="gif_banner">
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Web Design</li>
+      <li>Git</li>
+    </ul>
+  </section>
+
+
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <ul class="projects-list">
+      <li><strong>Projeto 1:</strong> <a href="exercicio1.html">Projeto 1</a></li>
+      <li><strong>Projeto 2:</strong> <a href="exercicio 2.html">Projeto 2</a></li>
+      <li><strong>Projeto 3:</strong> <a href="exemplo4.html">Projeto 3</a></li>
+      <li><strong>Projeto 4:</strong> <a href="jogoDoNumeroSecreto.html">Projeto 4</a></li>
+      <li><strong>Projeto 6:</strong> <a href="portal.html">Projeto 5</a></li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:bruno.73957@aluno.pr.senac.br">bruno.73957@aluno.pr.senac.br</a></p>
+  </section>
+
+  <div id="bonzi" title="Clique em mim!">
+    <img src="img/bonzi1.gif" alt="Bonzi Pet">
+  </div>
+
+  <img src="img/mods.gif" alt="Under Construction" class="gif_banner">
+  <footer>
+    <p>&copy; 2025 Bruno Souza  Todos os direitos reservados</p>
+  </footer>
+  <audio id="sound-click" src="sounds/click.mp3.mp3" preload="auto"></audio>
+  <audio id="sound-error" src="sounds/error.mp3.mp3" preload="auto"></audio>
+  <audio id="sound-popup" src="sounds/poup.wav" preload="auto"></audio>
+
+  <script src="portscript.js"></script>
+</body>
+
+</html>

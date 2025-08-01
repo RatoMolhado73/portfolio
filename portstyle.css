@@ -1,0 +1,350 @@
+ @import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Perfect DOS VGA 437', 'Tahoma', 'MS Sans Serif', sans-serif;
+
+    }
+
+    body {
+      background-color: #c0c0c0;
+      color: black;
+      padding: 10px;
+      cursor: url('cursor/normal.cur'), auto;
+    }
+
+    header {
+      background-color: #000080;
+      color: white;
+      padding: 10px;
+      border: 2px solid white;
+      border-bottom-color: gray;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      background-color: #000080;
+      padding: 5px 10px;
+      border: 2px outset #ffffff;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #0000cd;
+    }
+
+    section {
+      background-color: #e0e0e0;
+      border: 2px inset #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      background-color: #000080;
+      color: white;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .skills-list,
+    .projects-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .skills-list li,
+    .projects-list li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #000080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid white;
+    }
+
+    .foto-perfil {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 3px solid gray;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    a {
+      color: #0000cd;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: red;
+      cursor: url('cursor/hand.cur'), pointer;
+    }
+
+    .win95-window {
+      width: 300px;
+      background-color: #c0c0c0;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #808080;
+      font-size: 14px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 10;
+      display: none;
+    }
+
+    .win95-titlebar {
+      background-color: #000080;
+      color: white;
+      padding: 2px 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      height: 24px;
+      cursor: move;
+      user-select: none;
+    }
+
+    .win95-title {
+      font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+    }
+
+    .win95-close {
+      background-color: #c0c0c0;
+      border: 2px outset white;
+      font-weight: bold;
+      width: 24px;
+      height: 20px;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .win95-close:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+
+    .win95-content {
+      padding: 10px;
+      background-color: #ffffff;
+      border: 2px inset #fff;
+    }
+
+    .abrir-janela {
+      padding: 8px 16px;
+      background: #e0e0e0;
+      border: 2px outset white;
+      cursor: pointer;
+    }
+
+    .win95-content {
+      max-height: 200px;
+      overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+      width: 16px;
+      height: 16px;
+    }
+
+
+    ::-webkit-scrollbar-track {
+      background: #c0c0c0;
+      border: 2px inset #ffffff;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #808080;
+      border: 2px outset #ffffff;
+      border-radius: 0;
+    }
+
+
+    ::-webkit-scrollbar-button {
+      background: #e0e0e0;
+      border: 2px outset #ffffff;
+      height: 16px;
+      width: 16px;
+    }
+
+    .btn-iniciar {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: #000080;
+      color: white;
+      font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+      font-weight: bold;
+      padding: 6px 12px;
+      border: 2px outset #ffffff;
+      box-shadow:
+        1px 1px 0 #000000,
+        -1px -1px 0 #c0c0c0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+      border-radius: 3px;
+    }
+
+    .btn-iniciar:hover {
+      background: #0000cd;
+    }
+
+    .btn-iniciar:active {
+      border-style: inset;
+      box-shadow: none;
+    }
+
+    .btn-iniciar .icone {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .menu-iniciar {
+      position: fixed;
+      bottom: 50px;
+      left: 10px;
+      width: 220px;
+      background: #c0c0c0;
+      border: 2px solid #000;
+      box-shadow:
+        2px 2px 0 #808080;
+      display: none;
+      z-index: 999;
+      user-select: none;
+      font-size: 14px;
+    }
+
+    .menu-iniciar-header {
+      background: #000080;
+      color: white;
+      padding: 6px 10px;
+      font-weight: bold;
+      border-bottom: 2px solid #000;
+    }
+
+    .menu-iniciar ul {
+      list-style: none;
+      margin: 0;
+      padding: 8px 0;
+    }
+
+    .menu-iniciar li {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    .menu-iniciar li:hover {
+      background: #000080;
+      color: white;
+    }
+
+    .glitch {
+      animation: glitch 0.3s infinite;
+    }
+
+    @keyframes glitch {
+      0% {
+        transform: translate(1px, 0);
+      }
+
+      50% {
+        transform: translate(-1px, 1px);
+      }
+
+      100% {
+        transform: translate(0, -1px);
+      }
+    }
+
+    .gif_banner {
+      position: relative;
+      padding-left: 700px;
+    }
+
+    #bonzi {
+      position: absolute;
+      bottom: -350px;
+      right: 50px;
+      width: 120px;
+      height: auto;
+      cursor: pointer;
+      z-index: 9999;
+      user-select: none;
+    }
+
+    #bonzi img {
+      width: 100%;
+      height: auto;
+    }
+
+    .audio-player {
+      background-color: #c0c0c0;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #808080;
+      padding: 8px;
+      width: 100%;
+      font-size: 14px;
+      font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+    }
+
+    .audio-player .controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .win95-btn {
+      background: #e0e0e0;
+      border: 2px outset white;
+      padding: 2px 10px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow:
+        1px 1px 0 #000000,
+        -1px -1px 0 #c0c0c0;
+    }
+
+    .win95-btn:active {
+      border: 2px inset white;
+      box-shadow: none;
+    }
+
+    #seekBar {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 14px;
+      background: #c0c0c0;
+      border: 2px inset #fff;
+      width: 100%;
+    }
+
+    #seekBar::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      background: #000080;
+      cursor: pointer;
+      border: 1px solid #fff;
+    }
