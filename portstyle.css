@@ -284,7 +284,7 @@
 
     #bonzi {
       position: absolute;
-      bottom: -350px;
+      bottom: -418px;
       right: 50px;
       width: 120px;
       height: auto;
@@ -347,4 +347,5 @@
       background: #000080;
       cursor: pointer;
       border: 1px solid #fff;
+
     }
