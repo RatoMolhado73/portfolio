@@ -124,11 +124,11 @@ function tocarSom(id) {
       utter.rate = 1;
 
    
-      bonziImg.src = 'img/bonzi2.gif'; 
+      bonziImg.src = 'bonzi2.gif'; 
 
       
       setTimeout(() => {
-        bonziImg.src = 'img/bonzi1.gif';
+        bonziImg.src = 'bonzi1.gif';
       }, 5000);
 
       synth.speak(utter);
@@ -162,4 +162,5 @@ function tocarSom(id) {
       seekBar.addEventListener('input', () => {
         audio.currentTime = (seekBar.value / 100) * audio.duration;
       });
+
     });
